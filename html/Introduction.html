@@ -15,14 +15,29 @@
     </header>
 
     <nav>
-        <a href=""></a>
-
+        <a href="./First_Day.html">First_Day</a>
+        <a href="./Introduction.html">Introduction</a>
+        <a href="./script_Tag.html">script_Tag</a>
     </nav>
     <section>
-        <p id="demo">JavaScript can change HTML content.</p>
+        <p id="demo1">JavaScript can change HTML content.</p>
+        <button type="button" onclick='document.getElementById("demo1").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        
+        <br><br>
+        
+        <p id="demo2">JavaScript can change the style of an HTML element.</p>
+        <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
 
-        <button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+        <br><br>
 
+        <p id="demo3">JavaScript can hide HTML elements.</p>
+        <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+
+        <br><br>
+        
+        <p>JavaScript can show hidden HTML elements.</p>
+        <p id="demo4" style="display:none">Hello JavaScript!</p>
+        <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
     </section>
 </body>
 
