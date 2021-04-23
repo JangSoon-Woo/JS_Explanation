@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 1번쨰 -->
+<body>
+    <header>
+        <h3>JS Home</h3>
+    </header>
+
+    <nav>
+        <a href="./1First_Day.html">First_Day</a>
+        <a href="./2Introduction.html">Introduction</a>
+        <a href="./3JS_Where.html">JS_Where</a>
+        <a href="./4JS_Output.html">JS_Output</a>
+        <a href="./5JS_Statements.html">JS_Statements</a>
+        <a href="./6JS_Syntax.html">JS_Syntax</a>
+        <a href="./7JS_Comments.html">JS_Comments</a>
+        <a href="./8JS_Variables.html">JS_Variables</a>
+        <a href="./9JS_Let.html">JS_Let</a>
+
+    </nav>
+    <section>
+        <h2>JavaScript Variables</h2>
+        <p>In this example, x, y, and z are variables.</p>
+        <p id="demo1"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p id="demo2"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>Strings are written with quotes.</p>
+        <p>Numbers are written without quotes.</p>
+        <p id="demo3"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>Create a variable, assign a value to it, and display it:</p>
+        <p id="demo4"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>You can declare many variables in one statement.</p>
+        <p id="demo5"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>You can declare many variables in one statement.</p>
+        <p id="demo6"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>A variable declared without a value will have the value undefined.</p>
+        <p id="demo7"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>If you re-declare a JavaScript variable, it will not lose its value.</p>
+        <p id="demo8"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>The result of adding 5 + 2 + 3:</p>
+        <p id="demo9"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>The result of adding "John" + " " + "Doe":</p>
+        <p id="demo10"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>The result of adding "5" + 2 + 3:</p>
+        <p id="demo11"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Variables</h2>
+        <p>The result of adding 2 + 3 + "5":</p>
+        <p id="demo12"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript $</h2>
+        <p>The dollar sign is treated as a letter in JavaScript names.</p>
+        <p id="demo13"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript $</h2>
+        <p>The underscore is treated as a letter in JavaScript names.</p>
+        <p id="demo14"></p>
+
+
+
+        <script>
+            var x = 5; var y = 6;
+            var z = x + y;
+            document.getElementById("demo1").innerHTML = "The value of z is: " + z;
+
+            var price1 = 5; var price2 = 6;
+            var total = price1 + price2;
+            document.getElementById("demo2").innerHTML = "The total is: " + total;
+        
+            var pi = 3.14; var person = "John Doe"; var answer = 'Yes I am!';
+            document.getElementById("demo3").innerHTML = pi + "<br>" + person + "<br>" + answer;
+        
+            var carName = "Volvo";
+            document.getElementById("demo4").innerHTML = carName;
+        
+            var person = "John Doe", carName = "Volvo", price = 200;
+            document.getElementById("demo5").innerHTML = carName;
+            
+            var person = "John Doe", carName = "Volvo", price = 200;
+            document.getElementById("demo6").innerHTML = carName;   
+
+            var carName;
+            document.getElementById("demo7").innerHTML = carName;
+
+            var carName = "Volvo"; var carName;
+            document.getElementById("demo8").innerHTML = carName;
+
+            var x = 5 + 2 + 3;
+            document.getElementById("demo9").innerHTML = x;
+
+            var x = "John" + " " + "Doe";
+            document.getElementById("demo10").innerHTML = x;
+
+            x = "5" + 2 + 3;
+            document.getElementById("demo11").innerHTML = x;
+
+            var x = 2 + 3 + "5";
+            document.getElementById("demo12").innerHTML = x;
+
+            var $ = 2; var $myMoney = 5;
+            document.getElementById("demo13").innerHTML = $ + $myMoney;
+
+            var _x = 2; var _100 = 5;
+            document.getElementById("demo14").innerHTML = _x + _100;
+        </script>
+    </section>
+</body>
+
+</html>
