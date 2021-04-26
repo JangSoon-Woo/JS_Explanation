@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Operators</h3>
+    </header>
+
+    <nav>
+        <a href="./1First_Day.html">First_Day</a>
+        <a href="./2Introduction.html">Introduction</a>
+        <a href="./3JS_Where.html">JS_Where</a>
+        <a href="./4JS_Output.html">JS_Output</a>
+        <a href="./5JS_Statements.html">JS_Statements</a>
+        <a href="./6JS_Syntax.html">JS_Syntax</a>
+        <a href="./7JS_Comments.html">JS_Comments</a>
+        <a href="./8JS_Variables.html">JS_Variables</a>
+        <a href="./9JS_Let.html">JS_Let</a>
+        <a href="./10JS_Const.html">JS_Const</a>
+        <a href="./11JS_Operators.html">JS_Operators</a>
+        <a href="./12JS_Arithmetic.html">JS_Arithmetic</a>
+
+    </nav>
+    <section>
+        <h2>JavaScript Operators</h2>
+        <p>x1 = 5, y1 = 2, calculate z1 = x1 + y1, and display z1:</p>
+        <p id="demo1"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>The = Operator</h2>
+        <p id="demo2"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>The + Operator</h2>
+        <p id="demo3"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>The * Operator</h2>
+        <p id="demo4"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>The += Operator</h2>
+        <p id="demo5"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>JavaScript Operators</h2> 
+        <p>The + operator concatenates (adds) strings.</p> 
+        <p id="demo6"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>JavaScript Operators</h2>
+        <p>The assignment operator += can concatenate strings.</p>
+        <p id="demo7"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <h2>JavaScript Operators</h2>
+        <p>Adding a number and a string, returns a string.</p>
+        <p id="demo8"></p>
+        <script>
+            
+            var x1 = 5; var y1 = 2; var z1 = x1 + y1;
+            document.getElementById("demo1").innerHTML = z1;
+            /*──────────────────────────────────────────────*/
+            
+            var x2 = 10;
+            document.getElementById("demo2").innerHTML = x2;
+            /*──────────────────────────────────────────────*/
+            
+            var x3 = 5; var y3 = 2; var z3 = x3 + y3;
+            document.getElementById("demo3").innerHTML = z3;
+            /*──────────────────────────────────────────────*/
+            
+            var x4 = 5; var y4 = 2; var z4 = x4 * y4;
+            document.getElementById("demo4").innerHTML = z4;
+            /*──────────────────────────────────────────────*/
+            
+            var x5 = 10;   x5 += 5;
+            document.getElementById("demo5").innerHTML = x5;
+            /*──────────────────────────────────────────────*/
+            
+            var txt6_1 = "John"; var txt6_2 = "Doe";
+            document.getElementById("demo6").innerHTML = txt6_1 + " " + txt6_2;
+            /*──────────────────────────────────────────────*/
+            
+            txt7 = "What a very ";  txt7 += "nice day";
+            document.getElementById("demo7").innerHTML = txt7;
+            /*──────────────────────────────────────────────*/
+            
+            var x8 = 5 + 5;
+            var y8 = "5" + 5;
+            var z8 = "Hello" + 5;
+            document.getElementById("demo8").innerHTML = x8 + "<br>" + y8 + "<br>" + z8;
+        
+        </script>
+    </section>
+</body>
+
+</html>
