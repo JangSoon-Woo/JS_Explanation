@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 1번쨰 -->
+<body>
+    <header>
+        <h3>JS </h3>
+    </header>
+
+    <nav>
+        <a href="./1First_Day.html">First_Day</a>
+        <a href="./2Introduction.html">Introduction</a>
+        <a href="./3JS_Where.html">JS_Where</a>
+        <a href="./4JS_Output.html">JS_Output</a>
+        <a href="./5JS_Statements.html">JS_Statements</a>
+        <a href="./6JS_Syntax.html">JS_Syntax</a>
+        <a href="./7JS_Comments.html">JS_Comments</a>
+        <a href="./8JS_Variables.html">JS_Variables</a>
+        <a href="./9JS_Let.html">JS_Let</a>
+        <a href="./10JS_Const.html">JS_Const</a>
+        <a href="./11JS_Operators.html">JS_Operators</a>
+        <a href="./12JS_Arithmetic.html">JS_Arithmetic</a>
+        <a href="./13JS_Assignment.html">JS_Assignment</a>
+        <a href="./14JS_DataTypes.html">JS_DataTypes</a>
+        <a href="./15JS_Functions.html">JS_Functions</a>
+        <a href="./16JS_Objects.html">JS_Objects</a>
+
+    </nav>
+    <section>
+        
+        <p>A typical arithmetic operation takes two numbers and produces a new number.</p>
+        <p id="demo1"></p>
+        <p>──────────────────────────────────────────────</p>
+        
+        <p>A typical arithmetic operation takes two numbers (or variables) and produces a new number.</p>
+        <p id="demo2"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <p>A typical arithmetic operation takes two numbers (or expressions) and produces a new number.</p>
+        <p id="demo3"></p>
+        <p>──────────────────────────────────────────────</p>
+          
+        <h2>The + Operator</h2>
+        <p id="demo4"></p>
+        <p>──────────────────────────────────────────────</p>
+           
+        <h2>The - Operator</h2>
+        <p id="demo5"></p>
+        <p>──────────────────────────────────────────────</p>
+           
+        <h2>The * Operator</h2>
+        <p id="demo6"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <h2>The / Operator</h2>
+        <p id="demo7"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <h2>The % Operator</h2>
+        <p id="demo8"></p>
+        <p>──────────────────────────────────────────────</p>
+          
+        <h2>The -- Operator</h2>
+        <p id="demo10"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <h2>The ** Operator</h2>
+        <p id="demo11"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <h2>Math.pow()</h2>
+        <p id="demo12"></p>
+        <p>──────────────────────────────────────────────</p>
+         
+        <p>Multiplication has precedence over addition.</p>
+        <p id="demo13"></p>
+        <p>──────────────────────────────────────────────</p>
+          
+        <p>Multiplication has precedence over addition.</p>
+        <p>But parenthesis has precedence over multiplication.</p>
+        <p id="demo14"></p>
+        <p>──────────────────────────────────────────────</p>
+          
+        <p>When many operations has the same precedence, they are computed from left to right.</p>
+        <p id="demo15"></p>
+
+        
+    <script>
+        var x1 = 100 + 50;
+        document.getElementById("demo1").innerHTML = x1;
+        /*──────────────────────────────────────────────*/
+        
+        var a2 = 100; var b2 = 50;
+        var x2 = a + b;
+        document.getElementById("demo2").innerHTML = x2;
+        /*──────────────────────────────────────────────*/
+        
+        var a3 = 3;
+        var x3 = (100 + 50) * a3;
+        document.getElementById("demo3").innerHTML = x3;
+        /*──────────────────────────────────────────────*/
+        
+        var x4 = 5; var y4 = 2;
+        var z4 = x4 + y4;
+        document.getElementById("demo4").innerHTML = z4;
+        /*──────────────────────────────────────────────*/
+        
+        var x5 = 5; var y5 = 2;
+        var z5 = x5 - y5;
+        document.getElementById("demo5").innerHTML = z5;
+        /*──────────────────────────────────────────────*/
+        
+        var x6 = 5; var y6 = 2;
+        var z6 = x6 * y6;
+        document.getElementById("demo6").innerHTML = z6;
+        /*──────────────────────────────────────────────*/
+        
+        var x7 = 5; var y7 = 2;
+        var z7 = x7 / y7;
+        document.getElementById("demo7").innerHTML = z7;
+        /*──────────────────────────────────────────────*/
+        
+        var x8 = 5; var y8 = 2;
+        var z8 = x8 % y8;
+        document.getElementById("demo8").innerHTML = z8;
+        /*──────────────────────────────────────────────*/
+        
+        var x9 = 5; x9++;
+        var z9 = x9;
+        document.getElementById("demo9").innerHTML = z9;
+        /*──────────────────────────────────────────────*/
+        
+        var x10 = 5; x10--;
+        var z10 = x10;
+        document.getElementById("demo10").innerHTML = z10;
+        /*──────────────────────────────────────────────*/
+        
+        var x11 = 5;
+        document.getElementById("demo11").innerHTML = x11 ** 2;
+        /*──────────────────────────────────────────────*/
+        
+        var x12 = 5;
+        document.getElementById("demo12").innerHTML = Math.pow(x12,2);
+        /*──────────────────────────────────────────────*/
+        
+        document.getElementById("demo13").innerHTML = 100 + 50 * 3;
+        /*──────────────────────────────────────────────*/
+        
+        document.getElementById("demo14").innerHTML = (100 + 50) * 3;
+        /*──────────────────────────────────────────────*/
+        
+        document.getElementById("demo15").innerHTML = 100 + 50 - 3;
+
+
+    </script>
+    </section>
+</body>
+
+</html>
