@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS DataTypes</h3>
+    </header> 
+    <nav>
+        <a href="./1First_Day.html">First_Day</a>
+        <a href="./2Introduction.html">Introduction</a>
+        <a href="./3JS_Where.html">Where</a>
+        <a href="./4JS_Output.html">Output</a>
+        <a href="./5JS_Statements.html">Statements</a>
+        <a href="./6JS_Syntax.html">Syntax</a>
+        <a href="./7JS_Comments.html">Comments</a>
+        <a href="./8JS_Variables.html">Variables</a>
+        <a href="./9JS_Let.html">Let</a>
+        <a href="./10JS_Const.html">Const</a>
+        <a href="./11JS_Operators.html">Operators</a>
+        <a href="./12JS_Arithmetic.html">Arithmetic</a>
+        <a href="./13JS_Assignment.html">Assignment</a>
+        <a href="./14JS_DataTypes.html">DataTypes</a>
+        <a href="./15JS_Functions.html">Functions</a>
+        <a href="./16JS_Objects.html">Objects</a>
+    </nav>
+    <section>
+<h2>JavaScript</h2>
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+<p id="demo1"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>When adding a string and a number, JavaScript will treat the number as a string.</p>
+<p id="demo2"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2> 
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p> 
+<p id="demo3"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2> 
+<p>JavaScript evaluates expressions from left to right. Different sequences can produce different results:</p> 
+<p id="demo4"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Data Types</h2> 
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p> 
+<p id="demo5"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>Strings are written with quotes. You can use single or double quotes:</p> 
+<p id="demo6"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p> 
+<p id="demo7"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Numbers</h2>
+<p>Numbers can be written with, or without decimals:</p>
+<p id="demo8"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Numbers</h2>
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+<p id="demo9"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Booleans</h2> 
+<p>Booleans can have two values: true or false:</p> 
+<p id="demo10"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2>
+<p>Array indexes are zero-based, which means the first item is [0].</p> 
+<p id="demo11"></p> 
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Objects</h2>
+<p id="demo12"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p> 
+<p id="demo13"></p> 
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p> 
+<p id="demo14"></p> 
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2> 
+<p>The value (and the data type) of a variable with no value is <b>undefined</b>.</p> 
+<p id="demo15"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>Variables can be emptied if you set the value to <b>undefined</b>.</p>
+<p id="demo16"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>An empty string has both a legal value and a type:</p>
+<p id="demo17"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>Objects can be emptied by setting the value to <b>null</b>.</p>
+<p id="demo18"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>Objects can be emptied by setting the value to <b>undefined</b>.</p>
+<p id="demo19"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript</h2>
+<p>Undefined and null are equal in value but different in type:</p>
+<p id="demo20"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns the type of a variable or an expression.</p> 
+<p id="demo21"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript typeof</h2>
+<p>The typeof operator returns object for both objects, arrays, and null.</p>
+<p>The typeof operator does not return object for functions.</p> 
+<p id="demo22"></p> 
+
+
+<script>
+var x1 = 16 + "Volvo";
+document.getElementById("demo1").innerHTML = x1;
+/*──────────────────────────────────────────────*/
+
+var x2 = "Volvo" + 16;
+document.getElementById("demo2").innerHTML = x2;
+/*──────────────────────────────────────────────*/
+
+var x3 = 16 + 4 + "Volvo";
+document.getElementById("demo3").innerHTML = x3;
+/*──────────────────────────────────────────────*/
+
+var x4 = "Volvo" + 16 + 4;
+document.getElementById("demo4").innerHTML = x4;
+/*──────────────────────────────────────────────*/
+
+var x5; x5 = 5; x5 = "John";
+document.getElementById("demo5").innerHTML = x5;
+/*──────────────────────────────────────────────*/
+
+var carName6_1 = "Volvo XC60"; var carName6_2 = 'Volvo XC60';
+document.getElementById("demo6").innerHTML =
+carName6_1 + "<br>" + 
+carName6_2; 
+/*──────────────────────────────────────────────*/
+
+var answer7_1 = "It's alright";
+var answer7_2 = "He is called 'Johnny'";
+var answer7_3 = 'He is called "Johnny"';
+document.getElementById("demo7").innerHTML =
+answer7_1 + "<br>" + answer7_2 + "<br>" + answer7_3;
+/*──────────────────────────────────────────────*/
+
+var x8_1 = 34.00;
+var x8_2 = 34;
+var x8_3 = 3.14;
+document.getElementById("demo8").innerHTML = x8_1 + "<br>" + x8_2 + "<br>" + x8_3;
+/*──────────────────────────────────────────────*/
+
+var y9 = 123e5;
+var z9 = 123e-5;
+document.getElementById("demo9").innerHTML =
+y9 + "<br>" + z9;
+/*──────────────────────────────────────────────*/
+
+var x10 = 5; var y10 = 5; var z10 = 6;
+document.getElementById("demo10").innerHTML = (x10 == y10) + "<br>" + (x10 == z10);
+/*──────────────────────────────────────────────*/
+
+var cars11 = ["Saab","Volvo","BMW"];
+document.getElementById("demo11").innerHTML = cars11[0];
+/*──────────────────────────────────────────────*/
+
+var person12 = { firstName : "John", lastName : "Doe", age : 50 , eyeColor  : "blue" };
+document.getElementById("demo12").innerHTML = person12.firstName + " is " + person12.age + " years old.";
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo13").innerHTML = typeof "" + "<br>" + typeof "John" + "<br>" + typeof "John Doe";
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo14").innerHTML = typeof 0 + "<br>" + typeof 314 + "<br>" + typeof 3.14 + "<br>" + typeof (3) + "<br>" + typeof (3 + 4);
+/*──────────────────────────────────────────────*/
+
+var car15;
+document.getElementById("demo15").innerHTML = car15 + "<br>" + typeof car15;
+/*──────────────────────────────────────────────*/
+
+var car16 = "Volvo"; car16 = undefined;
+document.getElementById("demo16").innerHTML = car16 + "<br>" + typeof car16;
+/*──────────────────────────────────────────────*/
+
+var car17 = "";
+document.getElementById("demo17").innerHTML = "The value is: " + car17 + "<br>" + "The type is: " + typeof car17;
+/*──────────────────────────────────────────────*/
+
+var person18 = {firstName18:"John", lastName18:"Doe", age18:50, eyeColor18:"blue"}; person18 = null; document.getElementById("demo18").innerHTML = typeof person18;
+/*──────────────────────────────────────────────*/
+
+var person19 = {firstName19:"John", lastName19:"Doe", age19:50, eyeColor19:"blue"};
+person19 = undefined;
+document.getElementById("demo19").innerHTML = person19;
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo20").innerHTML =
+typeof undefined + "<br>" + typeof null + "<br><br>" + (null === undefined) + "<br>" + (null == undefined);
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo21").innerHTML = 
+typeof "john" + "<br>" + typeof 3.14 + "<br>" + typeof true + "<br>" + typeof false + "<br>" + typeof x;
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo22").innerHTML = 
+typeof {name22:'john', age22:34} + "<br>" + typeof [1,2,3,4] + "<br>" + typeof null + "<br>" + typeof function myFunc22(){};
+
+</script>
+
+    </section>
+</body>
+
+</html>
