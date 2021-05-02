@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Systax</h3>
+    </header>
+
+    <nav>
+      <a href="./1First_Day.html">First_Day</a>
+      <a href="./2Introduction.html">Introduction</a>
+      <a href="./3JS_Where.html">Where</a>
+      <a href="./4JS_Output.html">Output</a>
+      <a href="./5JS_Statements.html">Statements</a>
+      <a href="./6JS_Syntax.html">Syntax</a>
+      <a href="./7JS_Comments.html">Comments</a>
+      <a href="./8JS_Variables.html">Variables</a>
+      <a href="./9JS_Let.html">Let</a>
+      <a href="./10JS_Const.html">Const</a>
+      <a href="./11JS_Operators.html">Operators</a>
+      <a href="./12JS_Arithmetic.html">Arithmetic</a>
+      <a href="./13JS_Assignment.html">Assignment</a>
+      <a href="./14JS_DataTypes.html">DataTypes</a>
+      <a href="./15JS_Functions.html">Functions</a>
+      <a href="./16JS_Objects.html">Objects</a>
+      <a href="./17JS_Events.html">Ebents</a>
+      <a href="./18JS_Strings.html">Strings</a>
+      <a href="./19JS_StringMth.html">StringMth</a>
+      <a href="./20JS_Numbers.html">Numbers</a>
+      <a href="./21JS_NumberMth.html">NumberMth</a>
+      <a href="./22JS_Arrays.html">Arrays</a>
+  </nav>
+    <section>
+        <button onclick="document.getElementById('demo1').innerHTML=Date()">The time is?</button> 
+        <p id="demo1"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <button onclick="this.innerHTML=Date()">The time is?</button>
+        <p>──────────────────────────────────────────────</p>
+
+        <p>Click the button to display the date.</p> 
+        <button onclick="displayDate3()">The time is?</button>
+        <p id="demo3"></p>
+        <script>
+        function displayDate3() {
+          document.getElementById("demo3").innerHTML = Date();
+        }
+        </script>
+
+        
+
+    </section>
+</body>
+
+</html>
