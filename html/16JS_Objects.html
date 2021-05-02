@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Systax</h3>
+    </header>
+
+    <nav>
+      <a href="./1First_Day.html">First_Day</a>
+      <a href="./2Introduction.html">Introduction</a>
+      <a href="./3JS_Where.html">Where</a>
+      <a href="./4JS_Output.html">Output</a>
+      <a href="./5JS_Statements.html">Statements</a>
+      <a href="./6JS_Syntax.html">Syntax</a>
+      <a href="./7JS_Comments.html">Comments</a>
+      <a href="./8JS_Variables.html">Variables</a>
+      <a href="./9JS_Let.html">Let</a>
+      <a href="./10JS_Const.html">Const</a>
+      <a href="./11JS_Operators.html">Operators</a>
+      <a href="./12JS_Arithmetic.html">Arithmetic</a>
+      <a href="./13JS_Assignment.html">Assignment</a>
+      <a href="./14JS_DataTypes.html">DataTypes</a>
+      <a href="./15JS_Functions.html">Functions</a>
+      <a href="./16JS_Objects.html">Objects</a>
+      <a href="./17JS_Events.html">Ebents</a>
+      <a href="./18JS_Strings.html">Strings</a>
+      <a href="./19JS_StringMth.html">StringMth</a>
+      <a href="./20JS_Numbers.html">Numbers</a>
+      <a href="./21JS_NumberMth.html">NumberMth</a>
+      <a href="./22JS_Arrays.html">Arrays</a>
+  </nav>
+    <section>
+        <h2>JavaScript Variables</h2> 
+        <p id="demo1"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p id="demo2"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p id="demo3"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p id="demo4"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p>There are two different ways to access an object property.</p> 
+        <p>You can use person.property or person["property"].</p> 
+        <p id="demo5"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p>There are two different ways to access an object property.</p> 
+        <p>You can use person.property or person["property"].</p> 
+        <p id="demo6"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p>An object method is a function definition, stored as a property value.</p> 
+        <p id="demo7"></p>
+        <p>──────────────────────────────────────────────</p>
+
+        <h2>JavaScript Objects</h2> 
+        <p>If you access an object method without (), it will return the function definition:</p> 
+        <p id="demo8"></p>
+        <p>──────────────────────────────────────────────</p>
+
+
+        <script>
+        // Create and display a variable:
+        var car1 = "Fiat";
+        document.getElementById("demo1").innerHTML = car1;
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var car2 = {type2:"Fiat", model2:"500", color2:"white"}; 
+        // Display some data from the object:
+        document.getElementById("demo2").innerHTML = "The car type is " + car2.type2;
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person3 = {firstName3:"John", lastName3:"Doe", age3:50, eyeColor3:"blue"};
+        // Display some data from the object:
+        document.getElementById("demo3").innerHTML =
+        person3.firstName3 + " is " + person3.age3 + " years old.";
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person4 = {
+          firstName4: "John",
+          lastName4: "Doe",
+          age4: 50,
+          eyeColor4: "blue"
+        }; 
+        // Display some data from the object:
+        document.getElementById("demo4").innerHTML =
+        person4.firstName4 + " is " + person4.age4 + " years old.";
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person5 = {
+          firstName5: "John",
+          lastName5 : "Doe",
+          id5     :  5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo5").innerHTML =
+        person5.firstName5 + " " + person5.lastName5;
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person6 = {
+          firstName6: "John",
+          lastName6 : "Doe",
+          id6     :  5566
+        };
+        // Display some data from the object:
+        document.getElementById("demo6").innerHTML =
+        person6["firstName6"] + " " + person6["lastName6"];
+
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person7 = {
+          firstName7: "John",
+          lastName7 : "Doe",
+          id7     : 5566,
+          fullName7 : function() {
+            return this.firstName7 + " " + this.lastName7;
+          }
+        };
+        // Display data from the object:
+        document.getElementById("demo7").innerHTML =
+         person7.fullName7();
+        /*──────────────────────────────────────────────*/
+
+        // Create an object:
+        var person8 = {
+          firstName8: "John",
+          lastName8 : "Doe",
+          id8     : 5566,
+          fullName8 : function() {
+            return this.firstName8 + " " + this.lastName8;
+          }
+        };
+
+        // Display data from the object:
+        document.getElementById("demo8").innerHTML =
+         person8.fullName8;
+
+        </script> 
+    
+    </section>
+</body>
+
+</html>
