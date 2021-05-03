@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Systax</h3>
+    </header>
+
+    <nav>
+      <a href="./1First_Day.html">First_Day</a>
+      <a href="./2Introduction.html">Introduction</a>
+      <a href="./3JS_Where.html">Where</a>
+      <a href="./4JS_Output.html">Output</a>
+      <a href="./5JS_Statements.html">Statements</a>
+      <a href="./6JS_Syntax.html">Syntax</a>
+      <a href="./7JS_Comments.html">Comments</a>
+      <a href="./8JS_Variables.html">Variables</a>
+      <a href="./9JS_Let.html">Let</a>
+      <a href="./10JS_Const.html">Const</a>
+      <a href="./11JS_Operators.html">Operators</a>
+      <a href="./12JS_Arithmetic.html">Arithmetic</a>
+      <a href="./13JS_Assignment.html">Assignment</a>
+      <a href="./14JS_DataTypes.html">DataTypes</a>
+      <a href="./15JS_Functions.html">Functions</a>
+      <a href="./16JS_Objects.html">Objects</a>
+      <a href="./17JS_Events.html">Ebents</a>
+      <a href="./18JS_Strings.html">Strings</a>
+      <a href="./19JS_StringMth.html">StringMth</a>
+      <a href="./20JS_Numbers.html">Numbers</a>
+      <a href="./21JS_NumberMth.html">NumberMth</a>
+      <a href="./22JS_Arrays.html">Arrays</a>
+  </nav>
+    <section>
+<h2>JavaScript Strings</h2> 
+<p id="demo1"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>Strings are written inside quotes. You can use single or double quotes:</p> 
+<p id="demo2"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p> 
+<p id="demo3"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Properties</h2> 
+<p>The length property returns the length of a string:</p> 
+<p id="demo4"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>The escape sequence \" inserts a double quote in a string.</p> 
+<p id="demo5"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>The escape sequence \' inserts a single quote in a string.</p>
+<p id="demo6"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>The escape sequence \\ inserts a backslash in a string.</p> 
+<p id="demo7"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Statements</h2> 
+<p>The best place to break a code line is after an operator or a comma.</p> 
+<p id="demo8"></p>
+
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2> 
+<p>You can break a code line within a text string with a backslash.</p> 
+<p id="demo9"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Strings</h2>
+<p>The safest way to break a code line in a string is using string addition.</p>
+<p id="demo10"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Statements</h2>
+<p id="demo11">You cannot break a code line with a \ backslash.</p>
+<p>──────────────────────────────────────────────</p>
+
+<p id="demo12"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>Never Create Strings as objects.</h2>
+<p>Strings and objects cannot be safely compared.</p> 
+<p id="demo13"></p>        
+<p>──────────────────────────────────────────────</p>
+
+<h2>Never Create Strings as objects.</h2>
+<p>Strings and objects cannot be safely compared.</p> 
+<p id="demo14"></p>        
+<p>──────────────────────────────────────────────</p>
+
+<h2>Never Create Strings as objects.</h2>
+<p>JavaScript objects cannot be compared.</p> 
+<p id="demo15"></p>        
+<p>──────────────────────────────────────────────</p>
+
+h2>Never Create Strings as objects.</h2>
+<p>JavaScript objects cannot be compared.</p> 
+<p id="demo16"></p> 
+        <script>
+var x1 = "John Doe";  // String written inside quotes
+document.getElementById("demo1").innerHTML = x1;
+//──────────────────────────────────────────────
+
+var carName2_1 = "Volvo XC60"; // Double quotes
+var carName2_2 = 'Volvo XC60'; // Single quotes 
+document.getElementById("demo2").innerHTML = carName2_1 + " " + carName2_2; 
+//──────────────────────────────────────────────
+
+var answer3_1 = "It's alright";
+var answer3_2 = "He is called 'Johnny'";
+var answer3_3 = 'He is called "Johnny"';  
+document.getElementById("demo3").innerHTML =
+answer3_1 + "<br>" + answer3_2 + "<br>" + answer3_3;
+//──────────────────────────────────────────────
+
+var txt4 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln4 = txt4.length;
+document.getElementById("demo4").innerHTML = sln4;
+//──────────────────────────────────────────────
+
+var x5 = "We are the so-called \"Vikings\" from the north.";
+document.getElementById("demo5").innerHTML = x5;
+//──────────────────────────────────────────────
+
+var x6 = 'It\'s alright.';
+document.getElementById("demo6").innerHTML = x6; 
+//──────────────────────────────────────────────
+
+var x7 = "The character \\ is called backslash.";
+document.getElementById("demo7").innerHTML = x7; 
+//──────────────────────────────────────────────
+
+document.getElementById("demo8").innerHTML = "Hello Dolly!";
+//──────────────────────────────────────────────
+
+document.getElementById("demo9").innerHTML = "Hello \ Dolly!";
+//──────────────────────────────────────────────
+
+document.getElementById("demo10").innerHTML = "Hello " + "Dolly!";
+//──────────────────────────────────────────────
+
+document.getElementById("demo11").innerHTML = \ "Hello Dolly.";
+//──────────────────────────────────────────────
+
+var x12 = "John";        // x is a string
+var y12 = new String("John");  // y is an object
+document.getElementById("demo12").innerHTML = typeof x12 + "<br>" + typeof y12;
+//──────────────────────────────────────────────
+
+var x13 = "Johni";        // x is a string
+var y13 = new String("Johni");  // y is an object
+document.getElementById("demo13").innerHTML = (x13==y13);
+//──────────────────────────────────────────────
+
+var x14 = "Johna";        // x is a string
+var y14 = new String("Johna");  // y is an object
+document.getElementById("demo14").innerHTML = (x14===y14);
+//──────────────────────────────────────────────
+
+var x15 = new String("Johdan");  // x is an object
+var y15 = new String("Johdan");  // y is an object
+document.getElementById("demo15").innerHTML = (x15==y15);
+//──────────────────────────────────────────────
+
+var x16 = new String("Johnin");  // x is an object
+var y16 = new String("Johnin");  // y is an object
+document.getElementById("demo16").innerHTML = (x16===y16);
+
+        </script>
+    </section>
+</body>
+
+</html>
