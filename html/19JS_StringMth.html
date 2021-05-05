@@ -39,152 +39,318 @@
       <a href="./22JS_Arrays.html">Arrays</a>
   </nav>
     <section>
-<h2>JavaScript Strings</h2> 
+<h2>JavaScript String Properties</h2>
+<p>The length property returns the length of a string:</p>
 <p id="demo1"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Strings</h2> 
-<p>Strings are written inside quotes. You can use single or double quotes:</p> 
+<h2>JavaScript String Methods</h2>
+<p>The indexOf() method returns the position of the first occurrence of a specified text:</p>
 <p id="demo2"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Strings</h2> 
-<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string.</p> 
+<h2>JavaScript String Methods</h2> 
+<p>The lastIndexOf() method returns the position of the last occurrence of a specified text:</p> 
 <p id="demo3"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript String Properties</h2> 
-<p>The length property returns the length of a string:</p> 
+<h2>JavaScript String Methods</h2> 
+<p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p> 
 <p id="demo4"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Strings</h2> 
-<p>The escape sequence \" inserts a double quote in a string.</p> 
+<h2>JavaScript String Methods</h2> 
+<p>The indexOf() method accepts a second parameter as the starting position for the search:</p> 
 <p id="demo5"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Strings</h2> 
-<p>The escape sequence \' inserts a single quote in a string.</p>
-<p id="demo6"></p>
+<h2>JavaScript String Methods</h2> 
+<p>The lastIndexOf() method accepts a second parameter as the starting position for the search.</p>
+<p>Remember that the lastIndexOf() method searches backwards, so position 15 means start the search at position 15, and search to the beginning.</p>
+<p>Position 15 is position 15 from the beginning.</p> 
+<p id="demo6"></p> 
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Strings</h2> 
-<p>The escape sequence \\ inserts a backslash in a string.</p> 
+<h2>JavaScript String Methods</h2> 
+<p>The search() method returns the position of the first occurrence of a specified text in a string:</p> 
 <p id="demo7"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Statements</h2> 
-<p>The best place to break a code line is after an operator or a comma.</p> 
+<h2>JavaScript String Methods</h2>
+<p>The slice() method extract a part of a string
+and returns the extracted parts in a new string:</p>
 <p id="demo8"></p>
-
-<p>──────────────────────────────────────────────</p>
-
-<h2>JavaScript Strings</h2> 
-<p>You can break a code line within a text string with a backslash.</p> 
 <p id="demo9"></p>
-<p>──────────────────────────────────────────────</p>
-
-<h2>JavaScript Strings</h2>
-<p>The safest way to break a code line in a string is using string addition.</p>
 <p id="demo10"></p>
+<p id="demo11"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>JavaScript Statements</h2>
-<p id="demo11">You cannot break a code line with a \ backslash.</p>
-<p>──────────────────────────────────────────────</p>
-
+<h2>JavaScript String Methods</h2> 
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p> 
 <p id="demo12"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>Never Create Strings as objects.</h2>
-<p>Strings and objects cannot be safely compared.</p> 
-<p id="demo13"></p>        
+<h2>JavaScript String Methods</h2> 
+<p>The substr() method extract a part of a string and returns the extracted parts in a new string:</p> 
+<p id="demo13"></p>
+<p id="demo14"></p>
+<p id="demo15"></p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>Never Create Strings as objects.</h2>
-<p>Strings and objects cannot be safely compared.</p> 
-<p id="demo14"></p>        
+<h2>JavaScript String Methods</h2> 
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p> 
+<button onclick="myFunction16()">Try it</button> 
+<p id="demo16">Please visit Microsoft!</p>
 <p>──────────────────────────────────────────────</p>
 
-<h2>Never Create Strings as objects.</h2>
-<p>JavaScript objects cannot be compared.</p> 
-<p id="demo15"></p>        
+<h2>JavaScript String Methods</h2> 
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p> 
+<button onclick="myFunction17()">Try it</button> 
+<p id="demo17">Please visit Microsoft and Microsoft!</p>
 <p>──────────────────────────────────────────────</p>
 
-h2>Never Create Strings as objects.</h2>
-<p>JavaScript objects cannot be compared.</p> 
-<p id="demo16"></p> 
-        <script>
-var x1 = "John Doe";  // String written inside quotes
-document.getElementById("demo1").innerHTML = x1;
+<h2>JavaScript String Methods</h2> 
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p> 
+<button onclick="myFunction18()">Try it</button> 
+<p id="demo18">Please visit Microsoft!</p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>Replace all occurrences of "Microsoft" with "W3Schools" in the paragraph below:</p> 
+<button onclick="myFunction19()">Try it</button> 
+<p id="demo19">Please visit Microsoft and Microsoft!</p>
+<p>──────────────────────────────────────────────</p>
+
+<p>Convert string to upper case:</p>
+<button onclick="myFunction20()">Try it</button> 
+<p id="demo20">Hello World!</p>
+<p>──────────────────────────────────────────────</p>
+
+<p>Convert string to lower case:</p> 
+<button onclick="myFunction21()">Try it</button> 
+<p id="demo21">Hello World!</p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>The concat() method joins two or more strings:</p> 
+<p id="demo22"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String.trim()</h2> 
+<p>Click the button to alert the string with removed whitespace.</p> 
+<button onclick="myFunction23()">Try it</button> 
+<p><strong>Note:</strong> The trim() method is not supported in Internet Explorer 8 and earlier versions.</p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>The padStart() method pads a string with another string:</p> 
+<p id="demo24"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>The padEnd() method pads a string with another string:</p> 
+<p id="demo25"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>The charAt() method returns the character at a given position in a string:</p> 
+<p id="demo26"></p>
+<p>──────────────────────────────────────────────</p>
+
+<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p> 
+<p id="demo27"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>ECMAScript 5 allows property access on strings:</p> 
+<p id="demo28"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript String Methods</h2> 
+<p>ECMAScript 5 allows property acces on strings. but read only:</p> 
+<p id="demo29"></p>
+<p>──────────────────────────────────────────────</p>
+
+<p>Click "Try it" to display the first array element, after a string split.</p> 
+<button onclick="myFunction30()">Try it</button> 
+<p id="demo30"></p>
+<p>──────────────────────────────────────────────</p>
+
+<p id="demo31"></p> 
+
+
+<script>
+var txt1 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln1 = txt1.length;
+document.getElementById("demo1").innerHTML = sln1;
+//S
+
+var str2 = "Please locate where 'locate' occurs!";
+var pos2 = str2.indexOf("locate");
+document.getElementById("demo2").innerHTML = pos2;
 //──────────────────────────────────────────────
 
-var carName2_1 = "Volvo XC60"; // Double quotes
-var carName2_2 = 'Volvo XC60'; // Single quotes 
-document.getElementById("demo2").innerHTML = carName2_1 + " " + carName2_2; 
+var str3 = "Please locate where 'locate' occurs!";
+var pos3 = str3.lastIndexOf("locate");
+document.getElementById("demo3").innerHTML = pos3;
 //──────────────────────────────────────────────
 
-var answer3_1 = "It's alright";
-var answer3_2 = "He is called 'Johnny'";
-var answer3_3 = 'He is called "Johnny"';  
-document.getElementById("demo3").innerHTML =
-answer3_1 + "<br>" + answer3_2 + "<br>" + answer3_3;
+var str4 = "Please locate where 'locate' occurs!";
+var pos4 = str4.indexOf("John");
+document.getElementById("demo4").innerHTML = pos4;
 //──────────────────────────────────────────────
 
-var txt4 = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var sln4 = txt4.length;
-document.getElementById("demo4").innerHTML = sln4;
+var str5 = "Please locate where 'locate' occurs!";
+var pos5 = str5.indexOf("locate",15);
+document.getElementById("demo5").innerHTML = pos5;
 //──────────────────────────────────────────────
 
-var x5 = "We are the so-called \"Vikings\" from the north.";
-document.getElementById("demo5").innerHTML = x5;
+var str6 = "Please locate where 'locate' occurs!";
+var pos6 = str6.lastIndexOf("locate", 15);
+document.getElementById("demo6").innerHTML = pos6;
 //──────────────────────────────────────────────
 
-var x6 = 'It\'s alright.';
-document.getElementById("demo6").innerHTML = x6; 
+var str7 = "Please locate where 'locate' occurs!";
+var pos7 = str7.search("locate");
+document.getElementById("demo7").innerHTML = pos7;
 //──────────────────────────────────────────────
 
-var x7 = "The character \\ is called backslash.";
-document.getElementById("demo7").innerHTML = x7; 
+var str8 = "Apple, Banana, Kiwi";
+var res8 = str8.slice(7,13);
+document.getElementById("demo8").innerHTML = res8; 
 //──────────────────────────────────────────────
 
-document.getElementById("demo8").innerHTML = "Hello Dolly!";
+var str9 = "Apple, Banana, Kiwi";
+var res9 = str9.slice(-12,-6);
+document.getElementById("demo9").innerHTML = res9;
 //──────────────────────────────────────────────
 
-document.getElementById("demo9").innerHTML = "Hello \ Dolly!";
+var str10 = "Apple, Banana, Kiwi";
+var res10 = str10.slice(7);
+document.getElementById("demo10").innerHTML = res10;
 //──────────────────────────────────────────────
 
-document.getElementById("demo10").innerHTML = "Hello " + "Dolly!";
+var str11 = "Apple, Banana, Kiwi";
+var res11 = str11.slice(-12) 
+document.getElementById("demo11").innerHTML = res11;
 //──────────────────────────────────────────────
 
-document.getElementById("demo11").innerHTML = \ "Hello Dolly.";
+var str12 = "Apple, Banana, Kiwi";
+var res12 = str12.substring(7,13);
+document.getElementById("demo12").innerHTML = res12;
 //──────────────────────────────────────────────
 
-var x12 = "John";        // x is a string
-var y12 = new String("John");  // y is an object
-document.getElementById("demo12").innerHTML = typeof x12 + "<br>" + typeof y12;
+var str13 = "Apple, Banana, Kiwi";
+var res13 = str13.substr(7,6);
+document.getElementById("demo13").innerHTML = res13;
 //──────────────────────────────────────────────
 
-var x13 = "Johni";        // x is a string
-var y13 = new String("Johni");  // y is an object
-document.getElementById("demo13").innerHTML = (x13==y13);
+var str14 = "Apple, Banana, Kiwi";
+var res14 = str14.substr(7);
+document.getElementById("demo14").innerHTML = res14;
 //──────────────────────────────────────────────
 
-var x14 = "Johna";        // x is a string
-var y14 = new String("Johna");  // y is an object
-document.getElementById("demo14").innerHTML = (x14===y14);
+var str15 = "Apple, Banana, Kiwi";
+var res15 = str15.substr(-4);
+document.getElementById("demo15").innerHTML = res15;
 //──────────────────────────────────────────────
 
-var x15 = new String("Johdan");  // x is an object
-var y15 = new String("Johdan");  // y is an object
-document.getElementById("demo15").innerHTML = (x15==y15);
+
+
+function myFunction16() {
+var str16 = document.getElementById("demo16").innerHTML; 
+var txt16 = str16.replace("Microsoft","W3Schools");   document.getElementById("demo16").innerHTML = txt16;
+}
 //──────────────────────────────────────────────
 
-var x16 = new String("Johnin");  // x is an object
-var y16 = new String("Johnin");  // y is an object
-document.getElementById("demo16").innerHTML = (x16===y16);
+function myFunction17() {
+  var str17 = document.getElementById("demo17").innerHTML; 
+  var txt17 = str17.replace("Microsoft","W3Schools");
+  document.getElementById("demo17").innerHTML = txt17;
+}
+//──────────────────────────────────────────────
 
-        </script>
+function myFunction18() {
+  var str18 = document.getElementById("demo18").innerHTML; 
+  var txt18 = str18.replace(/MICROSOFT/i,"W3Schools");
+  document.getElementById("demo18").innerHTML = txt18;
+}
+//──────────────────────────────────────────────
+
+function myFunction19() {
+  var str19 = document.getElementById("demo19").innerHTML; 
+  var txt19 = str19.replace(/Microsoft/g,"W3Schools");
+  document.getElementById("demo19").innerHTML = txt19;
+}
+//──────────────────────────────────────────────
+
+function myFunction20() {
+  var text20 = document.getElementById("demo20").innerHTML;
+  document.getElementById("demo20").innerHTML = text20.toUpperCase();
+}
+//──────────────────────────────────────────────
+
+function myFunction21() {
+  var text21 = document.getElementById("demo21").innerHTML;
+  document.getElementById("demo21").innerHTML = text21.toLowerCase();
+}
+//──────────────────────────────────────────────
+
+var text22_1 = "Hello";
+var text22_2 = "World!";
+var text22_3 = text22_1.concat(" ",text22_2);
+document.getElementById("demo22").innerHTML = text22_3;
+//──────────────────────────────────────────────
+
+function myFunction23() {
+  var str23 = "     Hello World!     ";
+  alert(str23.trim());
+}
+//──────────────────────────────────────────────
+
+let str24 = "5";
+str24 = str24.padStart(4,0);
+document.getElementById("demo24").innerHTML = str24;
+//──────────────────────────────────────────────
+
+let str25 = "5";
+str25 = str25.padEnd(4,0);
+document.getElementById("demo25").innerHTML = str25;
+//──────────────────────────────────────────────
+
+var str26 = "HELLO WORLD";
+document.getElementById("demo26").innerHTML = str26.charAt(0);
+//──────────────────────────────────────────────
+
+var str27 = "HELLO WORLD";
+document.getElementById("demo27").innerHTML = str27.charCodeAt(0);
+//──────────────────────────────────────────────
+
+var str28 = "HELLO WORLD";
+document.getElementById("demo28").innerHTML = str28[0];
+//──────────────────────────────────────────────
+
+var str29 = "HELLO WORLD";
+str29[0] = "A";  // Does not work
+document.getElementById("demo29").innerHTML = str29[0];
+//──────────────────────────────────────────────
+
+function myFunction30() {
+  var str30 = "a,b,c,d,e,f";
+  var arr30 = str30.split(",");   document.getElementById("demo30").innerHTML = arr30[0];
+}
+//──────────────────────────────────────────────
+
+var str31 = "Hello";
+var arr31 = str31.split("");
+var text31 = "";
+var i31;
+for (i31 = 0; i31 < arr31.length; i31++) {
+  text31 += arr31[i31] + "<br>"
+}
+document.getElementById("demo31").innerHTML = text31;
+</script>
+
     </section>
 </body>
 
