@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Systax</h3>
+    </header>
+    <nav>
+      <a href="./1First_Day.html">First_Day</a>
+      <a href="./2Introduction.html">Introduction</a>
+      <a href="./3JS_Where.html">Where</a>
+      <a href="./4JS_Output.html">Output</a>
+      <a href="./5JS_Statements.html">Statements</a>
+      <a href="./6JS_Syntax.html">Syntax</a>
+      <a href="./7JS_Comments.html">Comments</a>
+      <a href="./8JS_Variables.html">Variables</a>
+      <a href="./9JS_Let.html">Let</a>
+      <a href="./10JS_Const.html">Const</a>
+      <a href="./11JS_Operators.html">Operators</a>
+      <a href="./12JS_Arithmetic.html">Arithmetic</a>
+      <a href="./13JS_Assignment.html">Assignment</a>
+      <a href="./14JS_DataTypes.html">DataTypes</a>
+      <a href="./15JS_Functions.html">Functions</a>
+      <a href="./16JS_Objects.html">Objects</a>
+      <a href="./17JS_Events.html">Ebents</a>
+      <a href="./18JS_Strings.html">Strings</a>
+      <a href="./19JS_StringMth.html">StringMth</a>
+      <a href="./20JS_Numbers.html">Numbers</a>
+      <a href="./21JS_NumberMth.html">NumberMth</a>
+      <a href="./22JS_Arrays.html">Arrays</a>
+  </nav>
+    <section>
+<h2>JavaScript Numbers</h2> 
+<p>Numbers can be written with or without decimals:</p> 
+<p id="demo1"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>Extra large or extra small numbers can be written with scientific (exponent) notation:</p> 
+<p id="demo2"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p> 
+<p id="demo3"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>Floating point arithmetic is not always 100% accurate.</p> 
+<p id="demo4"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>Floating point arithmetic is not always 100% accurate:</p>
+<p id="demo5_1"></p> 
+<p>But it helps to multiply and divide:</p> 
+<p id="demo5_2"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>If you add two numbers, the result will be a number:</p> 
+<p id="demo6"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>If you add two numeric strings, the result will be a concatenated string:</p> 
+<p id="demo7"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>If you add a number and a numeric string, the result will be a concatenated string:</p> 
+<p id="demo8"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>If you add a numeric string and a number, the result will be a concatenated string:</p> 
+<p id="demo9"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>A common mistake is to expect this result to be 30:</p>
+<p id="demo10"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>A common mistake is to expect this result to be 102030:</p> 
+<p id="demo11"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>JavaScript will try to convert strings to numbers when dividing:</p> 
+<p id="demo12"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>JavaScript will try to convert strings to numbers when multiplying:</p> 
+<p id="demo13"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>JavaScript will try to convert strings to numbers when subtracting:</p> 
+<p id="demo14"></p>
+
+<h2>JavaScript Numbers</h2> 
+<p>JavaScript will NOT convert strings to numbers when adding:</p> 
+<p id="demo15"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+var x1 = 3.14; var y1 = 3;
+document.getElementById("demo1").innerHTML = x1 + "<br>" + y1;
+
+var x2 = 123e5; var y2 = 123e-5;
+document.getElementById("demo2").innerHTML = x2 + "<br>" + y2;
+
+var x3 = 999999999999999; var y3 = 9999999999999999;
+document.getElementById("demo3").innerHTML = x3 + "<br>" + y3;
+
+var x4 = 0.2 + 0.1;
+document.getElementById("demo4").innerHTML = "0.2 + 0.1 = " + x4;
+
+var x5 = 0.2 + 0.1;
+document.getElementById("demo5_1").innerHTML = "0.2 + 0.1 = " + x5;
+var y5 = (0.2*10 + 0.1*10) / 10;
+document.getElementById("demo5_2").innerHTML = "0.2 + 0.1 = " + y5;
+
+var x6 = 10; var y6 = 20;
+var z6 = x6 + y6;
+document.getElementById("demo6").innerHTML = z6;
+
+var x7 = "10"; var y7 = "20";
+var z7 = x7 + y7;
+document.getElementById("demo7").innerHTML = z7;
+
+var x8 = 10; var y8 = "20";
+var z8 = x8 + y8;
+document.getElementById("demo8").innerHTML = z8;
+
+var x9 = "10"; var y9 = 20;
+document.getElementById("demo9").innerHTML = "The result is: " + x9 + y9;
+
+var x10 = 10; var y10 = 20;
+document.getElementById("demo10").innerHTML = "The result is: " + x10 + y10;
+
+var x11 = 10; var y11 = 20;
+var z11 = "30";
+var result11 = x11 + y11 + z11;
+document.getElementById("demo11").innerHTML = result11;
+
+var x12 = "100"; var y12 = "10";
+var z12 = x12 / y12;   
+document.getElementById("demo12").innerHTML = z12;
+
+var x13 = "100"; var y13 = "10";
+var z13 = x13 * y13;   
+document.getElementById("demo13").innerHTML = z13;
+
+var x14 = "100"; var y14 = "10";
+var z14 = x14 - y14;   
+document.getElementById("demo14").innerHTML = z14;
+
+var x15 = "100"; var y15 = "10";
+var z15 = x15 + y15;   
+document.getElementById("demo15").innerHTML = z15;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+    </section>
+</body>
+
+</html>
