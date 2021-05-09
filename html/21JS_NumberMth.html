@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 4번쨰 -->
+<body>
+    <header>
+        <h3>JS Output</h3>
+    </header>
+
+    <nav>
+        <a href="./1First_Day.html">First_Day</a>
+        <a href="./2Introduction.html">Introduction</a>
+        <a href="./3JS_Where.html">Where</a>
+        <a href="./4JS_Output.html">Output</a>
+        <a href="./5JS_Statements.html">Statements</a>
+        <a href="./6JS_Syntax.html">Syntax</a>
+        <a href="./7JS_Comments.html">Comments</a>
+        <a href="./8JS_Variables.html">Variables</a>
+        <a href="./9JS_Let.html">Let</a>
+        <a href="./10JS_Const.html">Const</a>
+        <a href="./11JS_Operators.html">Operators</a>
+        <a href="./12JS_Arithmetic.html">Arithmetic</a>
+        <a href="./13JS_Assignment.html">Assignment</a>
+        <a href="./14JS_DataTypes.html">DataTypes</a>
+        <a href="./15JS_Functions.html">Functions</a>
+        <a href="./16JS_Objects.html">Objects</a>
+        <a href="./17JS_Events.html">Ebents</a>
+        <a href="./18JS_Strings.html">Strings</a>
+        <a href="./19JS_StringMth.html">StringMth</a>
+        <a href="./20JS_Numbers.html">Numbers</a>
+        <a href="./21JS_NumberMth.html">NumberMth</a>
+        <a href="./22JS_Arrays.html">Arrays</a>
+    </nav>
+    <section>
+<h2>JavaScript Number Methods</h2> 
+<p>The toString() method converts a number to a string.</p> 
+<p id="demo1"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Methods</h2> 
+<p>The toExponential() method returns a string, with the number rounded and written using exponential notation.</p> 
+<p>An optional parameter defines the number of digits behind the decimal point.</p> 
+<p id="demo2"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Methods</h2> 
+<p>The toFixed() method rounds a number to a given number of digits.</p>
+<p>For working with money, toFixed(2) is perfect.</p> 
+<p id="demo3"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Methods</h2> 
+<p>The toPrecision() method returns a string, with a number written with a specified length:</p> 
+<p id="demo4"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Methods</h2> 
+<p>The valueOf() method returns a number as a number:</p> 
+<p id="demo5"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Global Methods</h2> 
+<p>The Number() method converts variables to numbers:</p> 
+<p id="demo6"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Global Methods</h2> 
+<p>The Number() method can convert a date to a number:</p> 
+<p id="demo7"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Global Functions</h2> 
+<p>The global JavaScript function parseInt() converts strings to numbers:</p> 
+<p id="demo8"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Global Methods</h2> 
+<p>The parseFloat() method converts strings to numbers:</p> 
+<p id="demo9"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>MAX_VALUE returns the largest possible number in JavaScript.</p> 
+<p id="demo10"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>MIN_VALUE returns the smallest number possible in JavaScript.</p> 
+<p id="demo11"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>POSITIVE_INFINITY</p> 
+<p id="demo12"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>POSITIVE_INFINITY is returned on overflow:</p> 
+<p id="demo13"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>NEGATIVE_INFINITY</p> 
+<p id="demo14"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2>
+<p>NEGATIVE_INFINITY</p> 
+<p id="demo15"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2>
+<p id="demo16"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Numbers</h2> 
+<p>A number divided by a non-numeric string becomes NaN (Not a Number):</p> 
+<p id="demo17"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Number Object Properties</h2> 
+<p>Using a Number property on a variable, expression, or value, will return undefined:</p> 
+<p id="demo18"></p>
+
+<script>
+var x1 = 123;
+document.getElementById("demo1").innerHTML =
+x1.toString() + "<br>" + (123).toString() + "<br>" + (100 + 23).toString();
+/*──────────────────────────────────────────────*/
+
+var x2 = 9.656;
+document.getElementById("demo2").innerHTML =
+x2.toExponential() + "<br>" + x2.toExponential(2) + "<br>" + x2.toExponential(4) + "<br>" + x2.toExponential(6);
+/*──────────────────────────────────────────────*/
+
+var x3 = 9.656;
+document.getElementById("demo3").innerHTML =
+x3.toFixed(0) + "<br>" + x3.toFixed(2) + "<br>" +
+x3.toFixed(4) + "<br>" + x3.toFixed(6);
+/*──────────────────────────────────────────────*/
+
+var x4 = 9.656;
+document.getElementById("demo4").innerHTML = 
+x4.toPrecision() + "<br>" + x4.toPrecision(2) + "<br>" +
+x4.toPrecision(4) + "<br>" + x4.toPrecision(6);  
+/*──────────────────────────────────────────────*/
+
+var x5 = 123; 
+document.getElementById("demo5").innerHTML = 
+x5.valueOf() + "<br>" + (123).valueOf() + "<br>" + (100 + 23).valueOf();
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo6").innerHTML = 
+Number(true) + "<br>" + Number(false) + "<br>" +
+Number("10") + "<br>" +  Number("  10") + "<br>" +
+Number("10  ") + "<br>" + Number(" 10  ") + "<br>" +
+Number("10.33") + "<br>" +  Number("10,33") + "<br>" +
+Number("10 33") + "<br>" + Number("John");
+/*──────────────────────────────────────────────*/
+
+var x7 = new Date("2017-09-30");
+document.getElementById("demo7").innerHTML = Number(x7); 
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo8").innerHTML = 
+parseInt("10") + "<br>" + parseInt("10.33") + "<br>" + parseInt("10 6") + "<br>" +  
+parseInt("10 years") + "<br>" + parseInt("years 10");  
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo9").innerHTML = 
+parseFloat("10") + "<br>" + parseFloat("10.33") + "<br>" + parseFloat("10 6") + "<br>" +
+parseFloat("10 years") + "<br>" + parseFloat("years 10");  
+/*──────────────────────────────────────────────*/
+
+var x10 = Number.MAX_VALUE;
+document.getElementById("demo10").innerHTML = x10;
+/*──────────────────────────────────────────────*/
+
+var x11 = Number.MIN_VALUE;
+document.getElementById("demo11").innerHTML = x11;
+/*──────────────────────────────────────────────*/
+
+var x12 = Number.POSITIVE_INFINITY;
+document.getElementById("demo12").innerHTML = x12;
+/*──────────────────────────────────────────────*/
+
+var x13 = 1 / 0;
+document.getElementById("demo13").innerHTML = x13;
+/*──────────────────────────────────────────────*/
+
+var x14 = Number.NEGATIVE_INFINITY;
+document.getElementById("demo14").innerHTML = x14;
+/*──────────────────────────────────────────────*/
+
+var x15 = -1 / 0;
+document.getElementById("demo15").innerHTML = x15;
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo16").innerHTML = Number.NaN;
+/*──────────────────────────────────────────────*/
+
+document.getElementById("demo17").innerHTML = 100 / "Apple";
+/*──────────────────────────────────────────────*/
+
+var x18 = 6;
+document.getElementById("demo18").innerHTML = x18.MAX_VALUE;
+
+
+
+
+
+
+
+
+</script>
+    </section>
+</body>
+
+</html>
