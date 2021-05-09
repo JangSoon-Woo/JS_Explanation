@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 2번쨰 -->
+<body>
+    <header>
+        <h3>JS Systax</h3>
+    </header>
+    <nav>
+      <a href="./1First_Day.html">First_Day</a>
+      <a href="./2Introduction.html">Introduction</a>
+      <a href="./3JS_Where.html">Where</a>
+      <a href="./4JS_Output.html">Output</a>
+      <a href="./5JS_Statements.html">Statements</a>
+      <a href="./6JS_Syntax.html">Syntax</a>
+      <a href="./7JS_Comments.html">Comments</a>
+      <a href="./8JS_Variables.html">Variables</a>
+      <a href="./9JS_Let.html">Let</a>
+      <a href="./10JS_Const.html">Const</a>
+      <a href="./11JS_Operators.html">Operators</a>
+      <a href="./12JS_Arithmetic.html">Arithmetic</a>
+      <a href="./13JS_Assignment.html">Assignment</a>
+      <a href="./14JS_DataTypes.html">DataTypes</a>
+      <a href="./15JS_Functions.html">Functions</a>
+      <a href="./16JS_Objects.html">Objects</a>
+      <a href="./17JS_Events.html">Ebents</a>
+      <a href="./18JS_Strings.html">Strings</a>
+      <a href="./19JS_StringMth.html">StringMth</a>
+      
+      <a href="./20JS_Numbers.html">Numbers</a>
+      <a href="./21JS_NumberMth.html">NumberMth</a>
+      <a href="./22JS_Arrays.html">Arrays</a>
+  </nav>
+<section>
+<h2>JavaScript Arrays</h2> 
+<p id="demo1"></p> 
+
+<h2>JavaScript Arrays</h2> 
+<p id="demo2"></p> 
+
+<h2>JavaScript Arrays</h2> 
+<p id="demo3"></p> 
+
+<h2>JavaScript Arrays</h2> 
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p> 
+<p id="demo4"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p> 
+<p id="demo5"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>Arrays use numbers to access its elements.</p> 
+<p id="demo6"></p>
+
+<h2>JavaScript Objects</h2>
+<p>JavaScript uses names to access object properties.</p>
+<p id="demo7"></p>
+
+<h2>JavaScript Arrays</h2>
+<p>The length property returns the length of an array.</p> 
+<p id="demo8"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p> 
+<p id="demo9"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p> 
+<p id="demo10"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The best way to loop through an array is using a standard for loop:</p>
+<p id="demo11"></p>
+
+<h2>JavaScript Arrays</h2> 
+<p>Array.forEach() calls a function for each array element.</p> 
+<p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p> 
+<p id="demo12"></p>
+
+<script>
+var cars1 = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo1").innerHTML = cars1;
+
+var cars2 = [
+  "Saab",
+  "Volvo",
+  "BMW"
+];
+document.getElementById("demo2").innerHTML = cars2;
+
+var cars3 = new Array("Saab", "Volvo", "BMW");
+document.getElementById("demo3").innerHTML = cars3;
+
+var cars4 = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo4").innerHTML = cars4[0];
+
+var cars5 = ["Saab", "Volvo", "BMW"];
+cars5[0] = "Opel";
+document.getElementById("demo5").innerHTML = cars5;
+
+var person6 = ["John", "Doe", 46];
+document.getElementById("demo6").innerHTML = person6[0];
+
+var person7 = {firstName:"John", lastName:"Doe", age:46};
+document.getElementById("demo7").innerHTML = person7["firstName"];
+
+var fruits8 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo8").innerHTML = fruits8.length;
+
+var fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+var first9 = fruits9[0];
+document.getElementById("demo9").innerHTML = first9;
+
+var fruits10 = ["Banana", "Orange", "Apple", "Mango"];
+var last10 = fruits10[fruits10.length-1];
+document.getElementById("demo10").innerHTML = last10;
+
+var fruits11, text11, fLen11, i;
+fruits11 = ["Banana", "Orange", "Apple", "Mango"];
+fLen11 = fruits11.length;  text11 = "<ul>";
+for (i = 0; i < fLen11; i++) {
+  text11 += "<li>" + fruits11[i] + "</li>";
+}
+text11 += "</ul>";
+document.getElementById("demo11").innerHTML = text11;
+
+var fruits12, text12;
+fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+
+text12 = "<ul>";
+fruits12.forEach(myFunction12);
+text12 += "</ul>";
+document.getElementById("demo12").innerHTML = text12;
+
+function myFunction12(value12) {
+  text12 += "<li>" + value12 + "</li>";
+} 
+
+</script>
+</section>
+</body>
+
+</html>
