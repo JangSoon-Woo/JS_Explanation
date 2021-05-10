@@ -41,53 +41,121 @@
 <section>
 <h2>JavaScript Arrays</h2> 
 <p id="demo1"></p> 
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p id="demo2"></p> 
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p id="demo3"></p> 
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p> 
 <p id="demo4"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p> 
 <p id="demo5"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>Arrays use numbers to access its elements.</p> 
 <p id="demo6"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Objects</h2>
 <p>JavaScript uses names to access object properties.</p>
 <p id="demo7"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2>
 <p>The length property returns the length of an array.</p> 
 <p id="demo8"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p> 
 <p id="demo9"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>JavaScript array elements are accesses using numeric indexes (starting from 0).</p> 
 <p id="demo10"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>The best way to loop through an array is using a standard for loop:</p>
 <p id="demo11"></p>
+<p>──────────────────────────────────────────────</p>
 
 <h2>JavaScript Arrays</h2> 
 <p>Array.forEach() calls a function for each array element.</p> 
 <p>Array.forEach() is not supported in Internet Explorer 8 or earlier.</p> 
 <p id="demo12"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The push method appends a new element to an array.</p> 
+<button onclick="myFunction13()">Try it</button> 
+<p id="demo13"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The length property provides an easy way to append new elements to an array without using the push() method.</p>
+<button onclick="myFunction14()">Try it</button> 
+<p id="demo14"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p> 
+<p id="demo15"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p id="demo16"></p> 
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>If you use a named index when accessing an array, JavaScript will redefine the array to a standard object, and some array methods and properties will produce undefined or incorrect results.</p> 
+<p id="demo17"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>Avoid using new Array(). Use [] instead.</p> 
+<p id="demo18"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>Avoid using new Array().</p> 
+<p id="demo19"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The typeof operator, when used on an array, returns object:</p> 
+<p id="demo20"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The new ECMASCRIPT 5 method isArray returns true when used on an array:</p> 
+<p id="demo21"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>This "home made" isArray() function returns true when used on an array:</p> 
+<p id="demo22"></p>
+<p>──────────────────────────────────────────────</p>
+
+<h2>JavaScript Arrays</h2> 
+<p>The instanceof operator returns true when used on an array:</p> 
+<p id="demo23"></p>
 
 <script>
 var cars1 = ["Saab", "Volvo", "BMW"];
 document.getElementById("demo1").innerHTML = cars1;
+/*──────────────────────────────────────────────*/
 
 var cars2 = [
   "Saab",
@@ -95,33 +163,42 @@ var cars2 = [
   "BMW"
 ];
 document.getElementById("demo2").innerHTML = cars2;
+/*──────────────────────────────────────────────*/
 
 var cars3 = new Array("Saab", "Volvo", "BMW");
 document.getElementById("demo3").innerHTML = cars3;
+/*──────────────────────────────────────────────*/
 
 var cars4 = ["Saab", "Volvo", "BMW"];
 document.getElementById("demo4").innerHTML = cars4[0];
+/*──────────────────────────────────────────────*/
 
 var cars5 = ["Saab", "Volvo", "BMW"];
 cars5[0] = "Opel";
 document.getElementById("demo5").innerHTML = cars5;
+/*──────────────────────────────────────────────*/
 
 var person6 = ["John", "Doe", 46];
 document.getElementById("demo6").innerHTML = person6[0];
+/*──────────────────────────────────────────────*/
 
 var person7 = {firstName:"John", lastName:"Doe", age:46};
 document.getElementById("demo7").innerHTML = person7["firstName"];
+/*──────────────────────────────────────────────*/
 
 var fruits8 = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo8").innerHTML = fruits8.length;
+/*──────────────────────────────────────────────*/
 
 var fruits9 = ["Banana", "Orange", "Apple", "Mango"];
 var first9 = fruits9[0];
 document.getElementById("demo9").innerHTML = first9;
+/*──────────────────────────────────────────────*/
 
 var fruits10 = ["Banana", "Orange", "Apple", "Mango"];
 var last10 = fruits10[fruits10.length-1];
 document.getElementById("demo10").innerHTML = last10;
+/*──────────────────────────────────────────────*/
 
 var fruits11, text11, fLen11, i;
 fruits11 = ["Banana", "Orange", "Apple", "Mango"];
@@ -131,6 +208,7 @@ for (i = 0; i < fLen11; i++) {
 }
 text11 += "</ul>";
 document.getElementById("demo11").innerHTML = text11;
+/*──────────────────────────────────────────────*/
 
 var fruits12, text12;
 fruits12 = ["Banana", "Orange", "Apple", "Mango"];
@@ -139,10 +217,78 @@ text12 = "<ul>";
 fruits12.forEach(myFunction12);
 text12 += "</ul>";
 document.getElementById("demo12").innerHTML = text12;
-
 function myFunction12(value12) {
   text12 += "<li>" + value12 + "</li>";
 } 
+/*──────────────────────────────────────────────*/
+
+var fruits13 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo13").innerHTML = fruits13;
+function myFunction13() {
+  fruits13.push("Lemon");
+  document.getElementById("demo13").innerHTML = fruits13;
+}
+/*──────────────────────────────────────────────*/
+
+var fruits14 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo14").innerHTML = fruits14; 
+function myFunction14() {
+  fruits14[fruits14.length] = "Lemon";
+  document.getElementById("demo14").innerHTML = fruits14;
+}
+/*──────────────────────────────────────────────*/
+
+var fruits15, text15, fLen15, j;
+fruits15 = ["Banana", "Orange", "Apple", "Mango"];
+fruits15[6] = "Lemon"; 
+fLen15 = fruits15.length;
+text15 = "";
+for (j = 0; j < fLen15; j++) {
+  text15 += fruits15[j] + "<br>";
+}
+document.getElementById("demo15").innerHTML = text15;
+/*──────────────────────────────────────────────*/
+
+var person16 = [];
+person16[0] = "John";
+person16[1] = "Doe";
+person16[2] = 46; 
+document.getElementById("demo16").innerHTML = person16[0] + " " + person16.length;
+/*──────────────────────────────────────────────*/
+
+var person17 = [];
+person17["firstName"] = "John";
+person17["lastName"] = "Doe";
+person17["age"] = 46; 
+document.getElementById("demo17").innerHTML = person17[0] + " " + person17.length;
+/*──────────────────────────────────────────────*/
+
+//var points18 = new Array(40, 100, 1, 5, 25, 10);
+var points18 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo18").innerHTML = points18[0];  
+/*──────────────────────────────────────────────*/
+
+var points19 = new Array(40);
+document.getElementById("demo19").innerHTML = points19[0];  
+/*──────────────────────────────────────────────*/
+
+var fruits20 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo20").innerHTML = typeof fruits20;
+/*──────────────────────────────────────────────*/
+
+var fruits21 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo21").innerHTML = Array.isArray(fruits21);
+/*──────────────────────────────────────────────*/
+
+var fruits22 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo22").innerHTML = isArray(fruits22); 
+function isArray(myArray22) {
+  return myArray22.constructor.toString().indexOf("Array") > -1;
+}
+/*──────────────────────────────────────────────*/
+
+var fruits23 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo23").innerHTML = fruits23 instanceof Array; 
 
 </script>
 </section>
