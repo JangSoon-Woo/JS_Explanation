@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 4번쨰 -->
+<body>
+    <header>
+        <h3>JS Output</h3>
+    </header>
+
+    <nav>
+        <a href="./index.html">index</a>
+        <a href="./21JS_NumberMth.html">NumberMth</a>
+        <a href="./22JS_Arrays.html">Arrays</a>
+        <a href="./23JS_ArrayMth.html">ArrayMth</a>
+        <a href="./24JS_ArraySort.html">ArraySort</a>
+        <a href="./25JS_Arraylteration.html">Arraylteration</a>
+        <a href="./26JS_Dates.html">Dates</a>
+        <a href="./27JS_DateFormats.html">DateFormats</a>
+        <a href="./28JS_DateGMth.html">DateGMth</a>
+        <a href="./29JS_DateSMth.html">DateSMth</a>
+        <a href="./30JS_Math.html">Math</a>
+        <a href="./31JS_Random.html">Random</a>
+        <a href="./32JS_Booleans.html">Booleans</a>
+        <a href="./33JS_Comparisons.html">Comparisons</a>
+        <a href="./34JS_Conditions.html">Conditions</a>
+        <a href="./35JS_Switch.html">Switch</a>
+        <a href="./36JS_LoopFor.html">LoopFor</a>
+        <a href="./37JS_LoopForIN.html">LoopForIN</a>
+        
+    </nav>
+    <section>
+        <h2>JavaScript Array Methods</h2>  
+        <h2>toString()</h2> 
+        <p>The toString() method returns an array as a comma separated string:</p> 
+        <p id="demo1"></p>
+        
+        <h2>JavaScript Array Methods</h2>  
+        <h2>join()</h2> 
+        <p>The join() method joins array elements into a string.</p> 
+        <p>It this example we have used " * " as a separator between the elements:</p> 
+        <p id="demo2"></p>
+
+        <h2>JavaScript Array Methods</h2> 
+        <h2>pop()</h2> 
+        <p>The pop() method removes the last element from an array.</p> 
+        <p id="demo3_1"></p>
+        <p id="demo3_2"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>pop()</h2> 
+        <p>The pop() method removes the last element from an array.</p> 
+        <p>The return value of the pop() method is the removed item.</p> 
+        <p id="demo4_1"></p>
+        <p id="demo4_2"></p>
+        <p id="demo4_3"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>push()</h2> 
+        <p>The push() method appends a new element to an array.</p> 
+        <button onclick="myFunction5()">Try it</button> 
+        <p id="demo5"></p>
+
+        <h2>JavaScript Array Methods</h2> 
+        <h2>push()</h2> 
+        <p>The push() method returns the new array length.</p>
+        <button onclick="myFunction6()">Try it</button> 
+        <p id="demo6_1"></p>
+        <p id="demo6_2"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>shift()</h2> 
+        <p>The shift() method removes the first element of an array (and "shifts" all other elements to the left):</p> 
+        <p id="demo7_1"></p>
+        <p id="demo7_2"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>shift()</h2> 
+        <p>The shift() method returns the element that was shifted out.</p> 
+        <p id="demo8_1"></p>
+        <p id="demo8_2"></p>
+        <p id="demo8_3"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>unshift()</h2> 
+        <p>The unshift() method adds new elements to the beginning of an array.</p> 
+        <button onclick="myFunction9()">Try it</button> 
+        <p id="demo9"></p>
+
+        <h2>JavaScript Array Methods</h2>  
+        <h2>unshift()</h2> 
+        <p>The unshift() method returns the length of the new array:</p> 
+        <p id="demo10_1"></p>
+        <p id="demo10_2"></p>
+        <p id="demo10_3"></p>
+
+        <h2>JavaScript Array Methods</h2> 
+        <p>Array elements are accessed using their index number:</p> 
+        <p id="demo11_1"></p>
+        <p id="demo11_2"></p>
+        
+        <h2>JavaScript Array Methods</h2> 
+        <p>The length property provides an easy way to append new elements to an array without using the push() method.</p> 
+        <button onclick="myFunction12()">Try it</button> 
+        <p id="demo12"></p>
+
+        <h2>JavaScript Array Methods</h2>
+        <p>Deleting elements leaves undefined holes in an array.</p> 
+        <p id="demo13_1"></p>
+        <p id="demo13_2"></p>
+         
+
+        <script>
+        var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits1.toString();
+
+        var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo2").innerHTML = fruits2.join(" * ");
+
+        var fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo3_1").innerHTML = fruits3;
+        fruits3.pop();
+        document.getElementById("demo3_2").innerHTML = fruits3;
+
+        var fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo4_1").innerHTML = fruits4;
+        document.getElementById("demo4_2").innerHTML = fruits4.pop();
+        document.getElementById("demo4_3").innerHTML = fruits4;
+
+        var fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo5").innerHTML = fruits5; 
+        function myFunction5() {
+            fruits5.push("Kiwi");
+            document.getElementById("demo5").innerHTML = fruits5;
+        }
+
+        var fruits6 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo6_1").innerHTML = fruits6; 
+        function myFunction6() {
+          document.getElementById("demo6_2").innerHTML = fruits6.push("Kiwi");
+          document.getElementById("demo6_1").innerHTML = fruits6;
+        }
+
+        var fruits7 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo7_1").innerHTML = fruits7;
+        fruits7.shift();
+        document.getElementById("demo7_2").innerHTML = fruits7;
+
+        var fruits8 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo8_1").innerHTML = fruits8;
+        document.getElementById("demo8_2").innerHTML = fruits8.shift();
+        document.getElementById("demo8_3").innerHTML = fruits8;
+
+        var fruits9 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo9").innerHTML = fruits9;
+
+        function myFunction9() {
+            fruits9.unshift("Lemon");
+            document.getElementById("demo9").innerHTML = fruits9;
+        }
+
+        var fruits10 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo10_1").innerHTML = fruits10;
+        document.getElementById("demo10_2").innerHTML = fruits10.unshift("Lemon");
+        document.getElementById("demo10_3").innerHTML = fruits10;
+
+        var fruits11 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo11_1").innerHTML = fruits11;
+        fruits11[0] = "Kiwi";
+        document.getElementById("demo11_2").innerHTML = fruits11;
+
+        var fruits12 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo12").innerHTML = fruits12;
+
+        function myFunction12() {
+            fruits12[fruits12.length] = "Kiwi";
+            document.getElementById("demo12").innerHTML = fruits12;
+        }
+
+        var fruits13 = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo13_1").innerHTML = "The first fruit is: " + fruits13[0];
+        delete fruits13[0];
+        document.getElementById("demo13_2").innerHTML = "The first fruit is: " + fruits13[0];
+ 
+        </script>
+        
+
+    </section>
+</body>
+
+</html>
