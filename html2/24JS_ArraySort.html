@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- 4번쨰 -->
+<body>
+    <header>
+        <h3>JS Output</h3>
+    </header>
+
+    <nav>
+        <a href="./index.html">index</a>
+        <a href="./21JS_NumberMth.html">NumberMth</a>
+        <a href="./22JS_Arrays.html">Arrays</a>
+        <a href="./23JS_ArrayMth.html">ArrayMth</a>
+        <a href="./24JS_ArraySort.html">ArraySort</a>
+        <a href="./25JS_Arraylteration.html">Arraylteration</a>
+        <a href="./26JS_Dates.html">Dates</a>
+        <a href="./27JS_DateFormats.html">DateFormats</a>
+        <a href="./28JS_DateGMth.html">DateGMth</a>
+        <a href="./29JS_DateSMth.html">DateSMth</a>
+        <a href="./30JS_Math.html">Math</a>
+        <a href="./31JS_Random.html">Random</a>
+        <a href="./32JS_Booleans.html">Booleans</a>
+        <a href="./33JS_Comparisons.html">Comparisons</a>
+        <a href="./34JS_Conditions.html">Conditions</a>
+        <a href="./35JS_Switch.html">Switch</a>
+        <a href="./36JS_LoopFor.html">LoopFor</a>
+        <a href="./37JS_LoopForIN.html">LoopForIN</a>
+        
+    </nav>
+    <section> 
+<h2>JavaScript Array Sort</h2> 
+<p>The sort() method sorts an array alphabetically.</p> 
+<button onclick="myFunction1()">Try it</button> 
+<p id="demo1"></p>
+
+<h2>JavaScript Array Sort Reverse</h2> 
+<p>The reverse() method reverses the elements in an array.</p>
+<p>By combining sort() and reverse() you can sort an array in descending order.</p>
+<button onclick="myFunction2()">Try it</button> 
+<p id="demo2"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<p>Click the button to sort the array in ascending order.</p> 
+<button onclick="myFunction3()">Try it</button> 
+<p id="demo3"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<p>Click the button to sort the array in descending order.</p> 
+<button onclick="myFunction4()">Try it</button> 
+<p id="demo4"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<p>Click the buttons to sort the array alphabetically or numerically.</p> 
+<button onclick="myFunction5_1()">Sort Alphabetically</button>
+<button onclick="myFunction5_2()">Sort Numerically</button>
+<p id="demo5"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<p>Click the button (again and again) to sort the array in random order.</p> 
+<button onclick="myFunction6()">Try it</button> 
+<p id="demo6"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<h3>The Fisher Yates Method</h3> 
+<p>Click the button (again and again) to sort the array in random order.</p> 
+<button onclick="myFunction7()">Try it</button> 
+<p id="demo7"></p>
+
+<h2>JavaScript Array Sort</h2> 
+<p>The lowest number is <span id="demo8"></span>.</p> 
+
+
+<script>
+var fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = fruits1; 
+function myFunction1() {
+  fruits1.sort();
+  document.getElementById("demo1").innerHTML = fruits1;
+}
+
+// Create and display an array:
+var fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2").innerHTML = fruits2;
+function myFunction2() {
+  // First sort the array
+  fruits2.sort();
+  // Then reverse it:
+  fruits2.reverse();
+  document.getElementById("demo2").innerHTML = fruits2;
+}
+
+var points3 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo3").innerHTML = points3;   
+function myFunction3() {
+  points3.sort(function(a, b){return a - b});
+  document.getElementById("demo3").innerHTML = points3;
+}
+
+var points4 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo4").innerHTML = points4; 
+function myFunction4() {
+  points4.sort(function(a, b){return b - a});
+  document.getElementById("demo4").innerHTML = points4;
+}
+
+var points5 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo5").innerHTML = points5;  
+
+function myFunction5_1() {
+  points5.sort();
+  document.getElementById("demo5").innerHTML = points5;
+}
+function myFunction5_2() {
+  points5.sort(function(a, b){return a - b});
+  document.getElementById("demo5").innerHTML = points5;
+}
+
+var points6 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo6").innerHTML = points6;   
+function myFunction6() {
+  points6.sort(function(a, b){return 0.5 - Math.random()});
+  document.getElementById("demo6").innerHTML = points6;
+}
+
+var points7 = [40, 100, 1, 5, 25, 10];
+document.getElementById("demo7").innerHTML = points7; 
+function myFunction7() {
+var a, b, c;
+  for (a = points7.length -1; a > 0; a--) {
+    b = Math.floor(Math.random() * a)
+    c = points7[a]
+    points7[a] = points7[b]
+    points7[b] = c
+  }
+  document.getElementById("demo7").innerHTML = points7;
+}
+
+var points8 = [40, 100, 1, 5, 25, 10];
+points8.sort(function(a, b){return a-b});
+document.getElementById("demo8").innerHTML = points8[0];
+
+</script>
+    </section>
+</body>
+
+</html>
