@@ -33,11 +33,124 @@
         <a href="./35JS_Switch.html">Switch</a>
         <a href="./36JS_LoopFor.html">LoopFor</a>
         <a href="./37JS_LoopForIN.html">LoopForIN</a>
-        
-    </nav>
+      </nav>
     <section>
-
+        <h2>JavaScript Array.forEach()</h2> 
+        <p>Calls a function once for each array element.</p> 
+        <p id="demo1"></p>
         
+        <h2>JavaScript Array.forEach()</h2> 
+        <p>Calls a function once for each array element.</p> 
+        <p id="demo2"></p>
+        
+        <h2>JavaScript Array.map()</h2> 
+        <p>Creates a new array by performing a function on each array element.</p> 
+        <p id="demo3"></p>
+
+<h2>JavaScript Array.map()</h2> 
+<p>Creates a new array by performing a function on each array element.</p> 
+<p id="demo4"></p>
+
+<h2>JavaScript Array.filter()</h2> 
+<p>Creates a new array with all array elements that passes a test.</p> 
+<p id="demo5"></p>
+
+<h2>JavaScript Array.filter()</h2> 
+<p>Creates a new array with all array elements that passes a test.</p> 
+<p id="demo6"></p>
+
+<h2>JavaScript Array.reduce()</h2> 
+<p>This example finds the sum of all numbers in an array:</p> 
+<p id="demo7"></p>
+
+<h2>JavaScript Array.reduce()</h2> 
+<p>This example finds the sum of all numbers in an array:</p> 
+<p id="demo8"></p>
+
+<h2>JavaScript Array.reduce()</h2> 
+<p>This example finds the sum of all numbers in an array:</p> 
+<p id="demo9"></p>
+
+
+        <script>
+        var txt1 = "";
+        var numbers1 = [45, 4, 9, 16, 25];
+        numbers1.forEach(myFunction1);
+        document.getElementById("demo1").innerHTML = txt1;
+        
+        function myFunction1(value1, index1, array1) {
+          txt1 = txt1 + value1 + "<br>"; 
+        }
+
+var txt2 = "";
+var numbers2 = [45, 4, 9, 16, 25];
+numbers2.forEach(myFunction2);
+document.getElementById("demo2").innerHTML = txt2;
+
+function myFunction2(value2) {
+  txt2 = txt2 + value2 + "<br>"; 
+}
+
+var numbers3_1 = [45, 4, 9, 16, 25];
+var numbers3_2 = numbers3_1.map(myFunction3);
+document.getElementById("demo3").innerHTML = numbers3_2;
+function myFunction3(value3, index3, array3) {
+  return value3 * 2;
+}
+
+var numbers4_1 = [45, 4, 9, 16, 25];
+var numbers4_2 = numbers4_1.map(myFunction4); 
+document.getElementById("demo4").innerHTML = numbers4_2; 
+function myFunction4(value4) {
+  return value4 * 2;
+}
+
+var numbers5 = [45, 4, 9, 16, 25];
+var over5_18 = numbers5.filter(myFunction5);
+document.getElementById("demo5").innerHTML = over5_18;
+function myFunction5(value5, index5, array5) {
+  return value5 > 18;
+}
+
+var numbers6 = [45, 4, 9, 16, 25];
+var over6_18 = numbers6.filter(myFunction6);
+document.getElementById("demo6").innerHTML = over6_18;
+function myFunction6(value6) {
+  return value6 > 18;
+}
+
+var numbers7 = [45, 4, 9, 16, 25];
+var sum7 = numbers7.reduce(myFunction7);
+document.getElementById("demo7").innerHTML = "The sum is " + sum7;
+function myFunction7(total7, value7, index7, array7) {
+  return total7 + value7;
+}
+
+var numbers8 = [45, 4, 9, 16, 25];
+var sum8 = numbers8.reduce(myFunction8);
+document.getElementById("demo8").innerHTML = "The sum is " + sum8;
+function myFunction8(total8, value8) {
+  return total8 + value8;
+}
+
+var numbers9 = [45, 4, 9, 16, 25];
+var sum9 = numbers9.reduce(myFunction9, 100);
+document.getElementById("demo9").innerHTML = "The sum is " + sum9;
+function myFunction9(total9, value9) {
+  return total9 + value9;
+}
+
+
+
+
+
+
+
+
+
+
+        </script>
+
     </section>
 </body>
 
